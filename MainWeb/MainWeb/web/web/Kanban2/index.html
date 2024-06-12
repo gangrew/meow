@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Проект</h1>
+        </header>
+        <main>
+            <div class="project-editor">
+                <label for="projectNameTextBox">Название проекта</label>
+                <input type="text" id="projectNameTextBox" class="input" placeholder="Введите название проекта">
+            </div>
+            <div class="project-actions">
+                <button id="addProjectButton" class="button add">Создать проект</button>
+            </div>
+            <div id="projectsList" class="projects-list"></div>
+        </main>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <label for="editProjectName">Название проекта</label>
+            <input type="text" id="editProjectName" class="input">
+            <label for="editProjectDescription">Описание проекта</label>
+            <textarea id="editProjectDescription" class="input" rows="4" placeholder="Введите описание проекта"></textarea>
+            <button id="saveChangesButton" class="button save">Сохранить изменения</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
